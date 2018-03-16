@@ -1,4 +1,6 @@
-package ua.ho.godex.strategy;
+package ua.ho.godex.strategy.character;
+
+import ua.ho.godex.strategy.weapon.WeaponBehavior;
 
 /**
  * Creator: Pavlenko Bohdan
