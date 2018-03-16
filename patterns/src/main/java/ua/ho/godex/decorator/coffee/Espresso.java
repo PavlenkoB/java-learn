@@ -14,6 +14,6 @@ public class Espresso extends Beverage {
 
     @Override
     public double cost() {
-        return .70;
+        return 1.70;
     }
 }
