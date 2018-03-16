@@ -1,4 +1,4 @@
-package ua.ho.godex.strategy;
+package ua.ho.godex.strategy.weapon;
 
 /**
  * Creator: Pavlenko Bohdan

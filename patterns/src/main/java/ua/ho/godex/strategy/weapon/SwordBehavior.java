@@ -1,7 +1,5 @@
 package ua.ho.godex.strategy.weapon;
 
-import ua.ho.godex.strategy.WeaponBehavior;
-
 /**
  * Creator: Pavlenko Bohdan
  * Date: 16.03.2018
