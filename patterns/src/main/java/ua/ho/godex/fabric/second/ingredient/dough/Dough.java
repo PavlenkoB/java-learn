@@ -1,4 +1,6 @@
-package ua.ho.godex.fabric.second.ingredient;
+package ua.ho.godex.fabric.second.ingredient.dough;
+
+import ua.ho.godex.fabric.second.ingredient.AbstractIngredient;
 
 /**
  * Creator: Pavlenko Bohdan
