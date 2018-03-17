@@ -1,4 +1,4 @@
-package headfirst.iterator.dinermerger;
+package ua.ho.godex.headfirst.iterator.dinermerger;
 
 import java.util.ArrayList;
 

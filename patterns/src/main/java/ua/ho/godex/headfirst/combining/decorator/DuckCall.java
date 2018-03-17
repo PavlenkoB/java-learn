@@ -1,4 +1,4 @@
-package headfirst.combining.decorator;
+package ua.ho.godex.headfirst.combining.decorator;
 
 public class DuckCall implements Quackable {
 

@@ -1,4 +1,4 @@
-package headfirst.templatemethod.simplebarista;
+package ua.ho.godex.headfirst.templatemethod.simplebarista;
 
 public class Barista {
 

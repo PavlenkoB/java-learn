@@ -1,4 +1,4 @@
-package headfirst.observer.weather;
+package ua.ho.godex.headfirst.observer.weather;
 
 public class HeatIndexDisplay implements Observer, DisplayElement {
     float heatIndex = 0.0f;

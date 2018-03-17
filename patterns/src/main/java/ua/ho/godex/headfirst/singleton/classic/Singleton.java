@@ -1,4 +1,4 @@
-package headfirst.singleton.classic;
+package ua.ho.godex.headfirst.singleton.classic;
 
 // NOTE: This is not thread safe!
 

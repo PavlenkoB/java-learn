@@ -1,4 +1,4 @@
-package headfirst.observer.weatherobservable;
+package ua.ho.godex.headfirst.observer.weatherobservable;
 
 import java.util.Observable;
 import java.util.Observer;

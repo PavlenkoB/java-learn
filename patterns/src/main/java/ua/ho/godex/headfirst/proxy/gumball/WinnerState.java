@@ -1,4 +1,4 @@
-package headfirst.proxy.gumball;
+package ua.ho.godex.headfirst.proxy.gumball;
 
 public class WinnerState implements State {
     transient GumballMachine gumballMachine;

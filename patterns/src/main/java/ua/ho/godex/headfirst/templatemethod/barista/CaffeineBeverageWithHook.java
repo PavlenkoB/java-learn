@@ -1,4 +1,4 @@
-package headfirst.templatemethod.barista;
+package ua.ho.godex.headfirst.templatemethod.barista;
 
 public abstract class CaffeineBeverageWithHook {
 

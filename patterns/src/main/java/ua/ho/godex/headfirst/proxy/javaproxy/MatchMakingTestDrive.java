@@ -1,4 +1,4 @@
-package headfirst.proxy.javaproxy;
+package ua.ho.godex.headfirst.proxy.javaproxy;
 
 import java.lang.reflect.*;
 import java.util.*;

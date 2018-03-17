@@ -1,4 +1,4 @@
-package headfirst.factory.pizzaaf;
+package ua.ho.godex.headfirst.factory.pizzaaf;
 
 public class ClamPizza extends Pizza {
     PizzaIngredientFactory ingredientFactory;

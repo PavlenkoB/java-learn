@@ -1,4 +1,4 @@
-package headfirst.singleton.dcl;
+package ua.ho.godex.headfirst.singleton.dcl;
 
 //
 // Danger!  This implementation of Singleton not

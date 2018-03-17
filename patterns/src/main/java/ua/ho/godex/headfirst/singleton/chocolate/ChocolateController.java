@@ -1,4 +1,4 @@
-package headfirst.singleton.chocolate;
+package ua.ho.godex.headfirst.singleton.chocolate;
 
 public class ChocolateController {
     public static void main(String args[]) {

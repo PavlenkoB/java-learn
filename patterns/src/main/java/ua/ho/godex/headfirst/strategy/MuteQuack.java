@@ -1,4 +1,4 @@
-package headfirst.strategy;
+package ua.ho.godex.headfirst.strategy;
 
 public class MuteQuack implements QuackBehavior {
     public void quack() {

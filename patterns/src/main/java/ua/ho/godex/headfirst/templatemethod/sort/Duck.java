@@ -1,4 +1,4 @@
-package headfirst.templatemethod.sort;
+package ua.ho.godex.headfirst.templatemethod.sort;
 
 public class Duck implements Comparable {
     String name;

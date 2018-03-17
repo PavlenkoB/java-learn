@@ -1,4 +1,4 @@
-package headfirst.iterator.transition;
+package ua.ho.godex.headfirst.iterator.transition;
 
 import java.util.*;
 

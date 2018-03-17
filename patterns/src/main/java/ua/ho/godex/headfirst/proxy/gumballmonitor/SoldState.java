@@ -1,4 +1,4 @@
-package headfirst.proxy.gumballmonitor;
+package ua.ho.godex.headfirst.proxy.gumballmonitor;
 
 public class SoldState implements State {
     GumballMachine gumballMachine;

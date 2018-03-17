@@ -1,4 +1,4 @@
-package headfirst.combining.factory;
+package ua.ho.godex.headfirst.combining.factory;
 
 public class Goose {
     public void honk() {

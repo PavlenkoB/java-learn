@@ -1,4 +1,4 @@
-package headfirst.composite.menuiterator;
+package ua.ho.godex.headfirst.composite.menuiterator;
 
 import java.util.Iterator;
 import java.util.ArrayList;

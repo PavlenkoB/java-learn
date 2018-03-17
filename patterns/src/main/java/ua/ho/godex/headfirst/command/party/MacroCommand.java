@@ -1,4 +1,4 @@
-package headfirst.command.party;
+package ua.ho.godex.headfirst.command.party;
 
 public class MacroCommand implements Command {
     Command[] commands;

@@ -1,4 +1,4 @@
-package headfirst.iterator.dinermerger;
+package ua.ho.godex.headfirst.iterator.dinermerger;
 
 public class ArrayIterator implements Iterator {
     MenuItem[] items;

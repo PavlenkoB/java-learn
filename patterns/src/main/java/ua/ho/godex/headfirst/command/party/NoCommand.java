@@ -1,4 +1,4 @@
-package headfirst.command.party;
+package ua.ho.godex.headfirst.command.party;
 
 public class NoCommand implements Command {
     public void execute() {

@@ -1,4 +1,4 @@
-package headfirst.observer.swing;
+package ua.ho.godex.headfirst.observer.swing;
 
 import java.awt.*;
 import java.awt.event.*;

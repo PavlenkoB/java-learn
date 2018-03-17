@@ -1,4 +1,4 @@
-package headfirst.templatemethod.applet;
+package ua.ho.godex.headfirst.templatemethod.applet;
 
 import java.applet.Applet;
 import java.awt.Graphics;

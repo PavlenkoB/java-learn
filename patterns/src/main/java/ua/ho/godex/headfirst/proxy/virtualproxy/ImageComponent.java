@@ -1,4 +1,4 @@
-package headfirst.proxy.virtualproxy;
+package ua.ho.godex.headfirst.proxy.virtualproxy;
 
 import java.awt.*;
 import javax.swing.*;

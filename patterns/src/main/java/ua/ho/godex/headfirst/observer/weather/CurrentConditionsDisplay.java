@@ -1,4 +1,4 @@
-package headfirst.observer.weather;
+package ua.ho.godex.headfirst.observer.weather;
 
 public class CurrentConditionsDisplay implements Observer, DisplayElement {
     private float temperature;

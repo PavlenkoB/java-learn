@@ -1,4 +1,4 @@
-package headfirst.proxy.javaproxy;
+package ua.ho.godex.headfirst.proxy.javaproxy;
 
 public interface PersonBean {
 

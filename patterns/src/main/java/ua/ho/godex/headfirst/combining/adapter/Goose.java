@@ -1,4 +1,4 @@
-package headfirst.combining.adapter;
+package ua.ho.godex.headfirst.combining.adapter;
 
 public class Goose {
     public void honk() {

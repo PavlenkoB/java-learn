@@ -1,4 +1,4 @@
-package headfirst.command.remote;
+package ua.ho.godex.headfirst.command.remote;
 
 public class CeilingFanOnCommand implements Command {
     CeilingFan ceilingFan;

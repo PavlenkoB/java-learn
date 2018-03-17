@@ -1,4 +1,4 @@
-package headfirst.templatemethod.barista;
+package ua.ho.godex.headfirst.templatemethod.barista;
 
 public class BeverageTestDrive {
     public static void main(String[] args) {

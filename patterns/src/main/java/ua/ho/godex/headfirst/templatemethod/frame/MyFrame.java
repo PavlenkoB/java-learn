@@ -1,4 +1,4 @@
-package headfirst.templatemethod.frame;
+package ua.ho.godex.headfirst.templatemethod.frame;
 
 import java.awt.*;
 import javax.swing.*;

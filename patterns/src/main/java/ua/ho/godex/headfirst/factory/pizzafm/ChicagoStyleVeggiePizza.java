@@ -1,4 +1,4 @@
-package headfirst.factory.pizzafm;
+package ua.ho.godex.headfirst.factory.pizzafm;
 
 public class ChicagoStyleVeggiePizza extends Pizza {
     public ChicagoStyleVeggiePizza() {

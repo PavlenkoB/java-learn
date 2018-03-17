@@ -1,4 +1,4 @@
-package headfirst.singleton.subclass;
+package ua.ho.godex.headfirst.singleton.subclass;
 
 public class Singleton {
     protected static Singleton uniqueInstance;

@@ -1,4 +1,4 @@
-package headfirst.templatemethod.sort;
+package ua.ho.godex.headfirst.templatemethod.sort;
 
 import java.util.ArrayList;
 import java.util.Arrays;

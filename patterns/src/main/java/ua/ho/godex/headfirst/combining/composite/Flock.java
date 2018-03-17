@@ -1,4 +1,4 @@
-package headfirst.combining.composite;
+package ua.ho.godex.headfirst.combining.composite;
 
 import java.util.Iterator;
 import java.util.ArrayList;

@@ -1,4 +1,4 @@
-package headfirst.command.simpleremote;
+package ua.ho.godex.headfirst.command.simpleremote;
 
 public class GarageDoor {
 

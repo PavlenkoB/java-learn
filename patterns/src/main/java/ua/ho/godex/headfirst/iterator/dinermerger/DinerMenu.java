@@ -1,4 +1,4 @@
-package headfirst.iterator.dinermerger;
+package ua.ho.godex.headfirst.iterator.dinermerger;
 
 public class DinerMenu implements Menu {
     static final int MAX_ITEMS = 6;

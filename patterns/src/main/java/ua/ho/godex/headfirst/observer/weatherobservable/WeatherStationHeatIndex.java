@@ -1,4 +1,4 @@
-package headfirst.observer.weatherobservable;
+package ua.ho.godex.headfirst.observer.weatherobservable;
 
 public class WeatherStationHeatIndex {
 

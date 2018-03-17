@@ -1,4 +1,4 @@
-package headfirst.decorator.io;
+package ua.ho.godex.headfirst.decorator.io;
 
 import java.io.*;
 

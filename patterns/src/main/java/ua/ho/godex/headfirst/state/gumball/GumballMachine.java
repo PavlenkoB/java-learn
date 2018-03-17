@@ -1,4 +1,4 @@
-package headfirst.state.gumball;
+package ua.ho.godex.headfirst.state.gumball;
 
 public class GumballMachine {
 

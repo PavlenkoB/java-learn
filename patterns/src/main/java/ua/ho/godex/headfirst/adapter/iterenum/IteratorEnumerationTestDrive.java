@@ -1,4 +1,4 @@
-package headfirst.adapter.iterenum;
+package ua.ho.godex.headfirst.adapter.iterenum;
 
 import java.util.*;
 

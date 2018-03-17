@@ -1,4 +1,4 @@
-package headfirst.singleton.threadsafe;
+package ua.ho.godex.headfirst.singleton.threadsafe;
 
 public class Singleton {
     private static Singleton uniqueInstance;

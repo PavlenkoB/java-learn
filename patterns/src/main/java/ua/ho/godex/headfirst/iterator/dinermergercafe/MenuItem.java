@@ -1,4 +1,4 @@
-package headfirst.iterator.dinermergercafe;
+package ua.ho.godex.headfirst.iterator.dinermergercafe;
 
 public class MenuItem {
     String name;

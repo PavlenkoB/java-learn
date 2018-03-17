@@ -1,4 +1,4 @@
-package headfirst.combined.djview;
+package ua.ho.godex.headfirst.combined.djview;
 
 public class HeartTestDrive {
 

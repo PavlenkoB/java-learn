@@ -1,4 +1,4 @@
-package headfirst.combining.observer;
+package ua.ho.godex.headfirst.combining.observer;
 
 public class DuckFactory extends AbstractDuckFactory {
 

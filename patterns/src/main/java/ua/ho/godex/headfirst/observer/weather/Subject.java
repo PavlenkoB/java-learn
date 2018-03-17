@@ -1,4 +1,4 @@
-package headfirst.observer.weather;
+package ua.ho.godex.headfirst.observer.weather;
 
 public interface Subject {
     public void registerObserver(Observer o);

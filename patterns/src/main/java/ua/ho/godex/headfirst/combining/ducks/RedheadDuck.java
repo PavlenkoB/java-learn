@@ -1,4 +1,4 @@
-package headfirst.combining.ducks;
+package ua.ho.godex.headfirst.combining.ducks;
 
 public class RedheadDuck implements Quackable {
     public void quack() {

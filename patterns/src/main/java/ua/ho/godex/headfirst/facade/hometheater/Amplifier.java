@@ -1,4 +1,4 @@
-package headfirst.facade.hometheater;
+package ua.ho.godex.headfirst.facade.hometheater;
 
 public class Amplifier {
     String description;

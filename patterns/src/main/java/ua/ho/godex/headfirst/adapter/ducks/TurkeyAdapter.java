@@ -1,4 +1,4 @@
-package headfirst.adapter.ducks;
+package ua.ho.godex.headfirst.adapter.ducks;
 
 public class TurkeyAdapter implements Duck {
     Turkey turkey;

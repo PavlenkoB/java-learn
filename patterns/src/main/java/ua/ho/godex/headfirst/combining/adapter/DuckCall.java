@@ -1,4 +1,4 @@
-package headfirst.combining.adapter;
+package ua.ho.godex.headfirst.combining.adapter;
 
 public class DuckCall implements Quackable {
     public void quack() {

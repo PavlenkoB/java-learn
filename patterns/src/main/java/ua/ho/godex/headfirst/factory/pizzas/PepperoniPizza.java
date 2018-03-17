@@ -1,4 +1,4 @@
-package headfirst.factory.pizzas;
+package ua.ho.godex.headfirst.factory.pizzas;
 
 public class PepperoniPizza extends Pizza {
     public PepperoniPizza() {

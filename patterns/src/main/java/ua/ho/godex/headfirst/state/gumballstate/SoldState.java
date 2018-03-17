@@ -1,4 +1,4 @@
-package headfirst.state.gumballstate;
+package ua.ho.godex.headfirst.state.gumballstate;
 
 public class SoldState implements State {
 

@@ -1,4 +1,4 @@
-package headfirst.combining.observer;
+package ua.ho.godex.headfirst.combining.observer;
 
 public abstract class AbstractDuckFactory {
 

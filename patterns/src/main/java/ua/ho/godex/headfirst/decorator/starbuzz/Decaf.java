@@ -1,4 +1,4 @@
-package headfirst.decorator.starbuzz;
+package ua.ho.godex.headfirst.decorator.starbuzz;
 
 public class Decaf extends Beverage {
     public Decaf() {

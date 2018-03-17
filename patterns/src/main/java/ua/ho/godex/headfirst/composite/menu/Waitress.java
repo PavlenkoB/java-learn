@@ -1,4 +1,4 @@
-package headfirst.composite.menu;
+package ua.ho.godex.headfirst.composite.menu;
 
 import java.util.Iterator;
 
