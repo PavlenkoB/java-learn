@@ -25,7 +25,6 @@ public class TestLinkedListVsArrayList {
         long startTime = System.currentTimeMillis();
         do {
             list.add(list.size() / 2, element);
-            element++;
         } while (elementsCounter-- > 0);
         long endTime = System.currentTimeMillis();
         System.out.println("Time=" + (endTime - startTime));
