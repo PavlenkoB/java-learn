@@ -8,7 +8,9 @@ package ua.ho.godex;
 public class ExceptionsTests {
     public static void main(String[] args) {
         try {
-            throw new Exception("Qwerty");
+            long testLong = 123l;
+            int testInt = 321;
+            testLong = testInt;
         } catch (Error e) {
             System.out.println("We got error" + e.getClass().getSimpleName());
             e.printStackTrace();
