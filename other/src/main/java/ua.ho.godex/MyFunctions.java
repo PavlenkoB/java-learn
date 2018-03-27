@@ -1,7 +1,11 @@
 package ua.ho.godex;
 
+import org.junit.Test;
+
 import java.util.ArrayList;
 import java.util.List;
+
+import static org.junit.Assert.assertEquals;
 
 /**
  * Creator: Pavlenko Bohdan
@@ -17,9 +21,18 @@ public class MyFunctions {
      * @return the second largest number in intsArray or a default value of 0
      */
     public static int secondLargest(final int[] intsArray) {
-        int secondLargest = 0;
-        int firstLargest = 0;
-        for (int iterator = 0; iterator < intsArray.length; iterator++) {
+        int firstLargest, secondLargest;
+        if (intsArray.length < 2) {
+            return 0;
+        }
+        if (intsArray[0] > intsArray[1]) {
+            secondLargest = intsArray[1];
+            firstLargest = intsArray[0];
+        } else {
+            secondLargest = intsArray[1];
+            firstLargest = intsArray[0];
+        }
+        for (int iterator = 1; iterator < intsArray.length; iterator++) {
             if (intsArray[iterator] > firstLargest) {
                 secondLargest = firstLargest;
                 firstLargest = intsArray[iterator];
@@ -47,6 +60,13 @@ public class MyFunctions {
         return result;
     } // divisible
 
+
+    private static void cheackPair(int first, int second, int targetInt, List<Pair> list) {
+        if ((first + second) == targetInt) {
+            list.add(new Pair(first, second));
+        }
+    }
+
     /**
      * Find all pairs of numbers chosen from intsArray, such that each pair of numbers adds
      * up to targetInt.
@@ -55,8 +75,18 @@ public class MyFunctions {
      * @param targetInt *            the targetInt integer
      * @return a List of Pairs of numbers that add up to a specified targetInt
      */
-    public List<Pair> findPairs(int[] intsArray, int targetInt) {
+    public static List<Pair> findPairs(int[] intsArray, int targetInt) {
         ArrayList<Pair> retPairs = new ArrayList<Pair>();
+        /*Arrays.stream(intsArray)
+                .forEach(i1 -> Arrays.stream(intsArray)
+                        .forEach(i2 -> cheackPair(i1, i2, targetInt, retPairs))
+                );
+        */
+        for (int i = 0; i < intsArray.length; i++) {
+            for (int i2 = i + 1; i2 < intsArray.length; i2++) {
+                cheackPair(intsArray[i], intsArray[i2], targetInt, retPairs);
+            }
+        }
         return retPairs;
     } // findPairs
 

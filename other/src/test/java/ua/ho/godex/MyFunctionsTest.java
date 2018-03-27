@@ -1,6 +1,5 @@
 package ua.ho.godex;
 
-import org.junit.Before;
 import org.junit.Test;
 
 import java.util.List;
@@ -13,10 +12,6 @@ import static org.junit.Assert.assertEquals;
  * Project: patterns
  */
 public class MyFunctionsTest {
-    @Before
-    public void prepare() {
-
-    }
 
     @Test
     public void secondLargest1() {
@@ -29,7 +24,28 @@ public class MyFunctionsTest {
     public void secondLargest2() {
         int[] testArray = {-1, -2, -3};
         int largest = MyFunctions.secondLargest(testArray);
+        assertEquals(-2, largest);
+    }
+
+    @Test
+    public void secondLargest3() {
+        int[] testArray = {-1};
+        int largest = MyFunctions.secondLargest(testArray);
         assertEquals(0, largest);
+    }
+
+    @Test
+    public void secondLargest4() {
+        int[] testArray = {-1, -3};
+        int largest = MyFunctions.secondLargest(testArray);
+        assertEquals(-3, largest);
+    }
+
+    @Test
+    public void secondLargest5() {
+        int[] testArray = {-3, -1};
+        int largest = MyFunctions.secondLargest(testArray);
+        assertEquals(-3, largest);
     }
 
     @Test
@@ -41,7 +57,29 @@ public class MyFunctionsTest {
                 new MyFunctions.Pair(6, 6),
                 new MyFunctions.Pair(5, 10)
         };
-        List<MyFunctions.Pair> divisible = MyFunctions.divisible(testPairsArray, 3);
+        int divisor = 3;
+        List<MyFunctions.Pair> divisible = MyFunctions.divisible(testPairsArray, divisor);
         assertEquals(2, divisible.size());
+    }
+
+    @Test
+    public void findPairs1() {
+        int[] testList = {1, 2, 3, 4, 5, 6, 7, 8, 9};
+        List<MyFunctions.Pair> pairList = MyFunctions.findPairs(testList, 5);
+        assertEquals(2, pairList.size());
+    }
+
+    @Test
+    public void findPairs2() {
+        int[] testList = {1, 2, 3, 4, 5, 6, 7, 8, -1};
+        List<MyFunctions.Pair> pairList = MyFunctions.findPairs(testList, 5);
+        assertEquals(3, pairList.size());
+    }
+
+    @Test
+    public void findPairs3() {
+        int[] testList = {1, 2, 3, 4, 5, 6, 7, 8, 9};
+        List<MyFunctions.Pair> pairList = MyFunctions.findPairs(testList, 10);
+        assertEquals(4, pairList.size());
     }
 }
