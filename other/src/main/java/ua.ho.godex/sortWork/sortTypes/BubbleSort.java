@@ -19,7 +19,7 @@ public class BubbleSort implements SortableTestList<List<Integer>> {
                     list.set(j + 1, tmp);
                 }
             }
-            System.out.println("list = [" + list + "]");
+            this.showList(list);
         }
         return list;
     }

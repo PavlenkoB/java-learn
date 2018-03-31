@@ -9,4 +9,8 @@ import java.util.List;
  */
 public interface SortableTestList<C extends List> {
     C sort(C list);
+
+    default public void showList(C list) {
+        System.out.println(this.getClass().getSimpleName() + " = [" + list + "]");
+    }
 }
