@@ -7,7 +7,7 @@ import java.util.List;
  * Date: 31.03.2018
  * Project: patterns
  */
-public interface SortableTestList<C extends List> {
+public interface SortableTestList<C extends List<Integer>> {
     C sort(C list);
 
     default public void showList(C list) {
