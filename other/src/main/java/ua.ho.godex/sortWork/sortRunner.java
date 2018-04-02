@@ -1,6 +1,7 @@
 package ua.ho.godex.sortWork;
 
 import ua.ho.godex.sortWork.sortTypes.BubbleSort;
+import ua.ho.godex.sortWork.sortTypes.InsertionSort;
 import ua.ho.godex.sortWork.sortTypes.SortableTestList;
 
 import java.util.ArrayList;
@@ -19,7 +20,7 @@ public class sortRunner {
         }
         System.out.println("testList" + testList);
 
-        SortableTestList testArraySorter = new BubbleSort();
+        SortableTestList testArraySorter = new InsertionSort();
         testList = testArraySorter.sort(testList);
 
         System.out.println("testList" + testList);

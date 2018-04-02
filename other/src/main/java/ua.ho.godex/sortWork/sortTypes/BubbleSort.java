@@ -8,6 +8,8 @@ import java.util.List;
  * Project: patterns
  */
 public class BubbleSort implements SortableTestList<List<Integer>> {
+    private List<Integer> preList;
+
     public List sort(List<Integer> list) {
         Integer n = list.size();
         Integer tmp;
@@ -23,4 +25,6 @@ public class BubbleSort implements SortableTestList<List<Integer>> {
         }
         return list;
     }
+
+
 }
