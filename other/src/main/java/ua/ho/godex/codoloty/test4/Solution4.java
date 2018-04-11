@@ -5,6 +5,10 @@ package ua.ho.godex.codoloty.test4;
  * Date: 10.04.2018
  * Project: patterns
  */
+
+/*
+
+ */
 public class Solution4 {
     public int solution(int[] array, int aliceRange, int bobRange) {
         Range alicePositions, bobPositions;
