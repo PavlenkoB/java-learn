@@ -8,7 +8,12 @@ import java.util.ArrayList;
  * Project: patterns
  */
 public class Child extends Parent {
+    public ArrayList<? super Parent> testArray = new ArrayList<Parent>();
     public Child() {
-        ArrayList<? extends Parent> testArray = new ArrayList<Child>();
+    }
+
+    public static void main(String[] args) {
+        Child child = new Child();
+        child.testArray.add(new Parent());
     }
 }
