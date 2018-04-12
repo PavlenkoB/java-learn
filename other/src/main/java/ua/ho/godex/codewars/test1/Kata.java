@@ -5,7 +5,6 @@ package ua.ho.godex.codewars.test1;
  * Date: 10.04.2018
  * Project: patterns
  */
-
 public class Kata {
     public static String createPhoneNumber(int[] numbers) {
         StringBuilder ret = new StringBuilder();
