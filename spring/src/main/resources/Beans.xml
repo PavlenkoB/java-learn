@@ -6,7 +6,10 @@
    http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
 
     <bean id="helloWorld" class="ua.ho.godex.learnspring.HelloWorld"
-          scope="prototype">
+          scope="prototype" init-method="init" destroy-method="destroy">
+        <property name="message" value="Hello World!"/>
     </bean>
+
+    <bean class="ua.ho.godex.learnspring.InitHelloWorld"/>
 
 </beans>
