@@ -1,2 +1,3 @@
 include 'patterns'
 include 'other'
+include 'spring'
