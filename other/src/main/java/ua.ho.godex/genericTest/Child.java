@@ -1,6 +1,7 @@
 package ua.ho.godex.genericTest;
 
 import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Creator: Pavlenko Bohdan
@@ -8,7 +9,7 @@ import java.util.ArrayList;
  * Project: patterns
  */
 public class Child extends Parent {
-    public ArrayList<? super Parent> testArray = new ArrayList<Parent>();
+    public List<? super Parent> testArray = new ArrayList<Parent>();
     public Child() {
     }
 
