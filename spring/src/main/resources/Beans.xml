@@ -15,4 +15,11 @@
         <property name="message1" value="Test1"/>
     </bean>
 
+    <!-- Definition for textEditor bean using inner bean -->
+    <bean id="textEditor" class="ua.ho.godex.learnspring.di.TextEditor">
+        <property name="spellChecker">
+            <bean id="spellChecker" class="ua.ho.godex.learnspring.di.SpellChecker"/>
+        </property>
+    </bean>
+
 </beans>
