@@ -9,6 +9,10 @@ import lombok.Setter;
 import javax.persistence.*;
 import java.io.Serializable;
 import java.math.BigDecimal;
+import java.time.LocalDate;
+import java.util.Calendar;
+import java.util.Date;
+import java.util.GregorianCalendar;
 
 @Entity(name = "developers")
 @Setter
@@ -17,7 +21,7 @@ import java.math.BigDecimal;
 @AllArgsConstructor
 public class Developer implements Serializable {
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     @Version
     @Column
@@ -30,5 +34,7 @@ public class Developer implements Serializable {
     private String password;
     @Column(nullable = false)
     private BigDecimal salary;
-
+    @Temporal(TemporalType.DATE)
+    @Column(nullable = false)
+    private Calendar startWork;
 }

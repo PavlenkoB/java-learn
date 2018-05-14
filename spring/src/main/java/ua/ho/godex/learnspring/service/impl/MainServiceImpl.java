@@ -26,7 +26,8 @@ public abstract class MainServiceImpl<T> implements MainService<T> {
 
     @Override
     public T create(T model) {
-        return (T) this.repository.save(model);
+        T save = (T) this.repository.save(model);
+        return save;
     }
 
     @Override
