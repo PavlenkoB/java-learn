@@ -34,4 +34,17 @@ public class Developer implements Serializable {
     @Temporal(TemporalType.DATE)
     @Column(nullable = false)
     private Calendar startWork;
+
+    @Override
+    public String toString() {
+        return "Developer{" +
+                "id=" + id +
+                ", version=" + version +
+                ", login='" + login + '\'' +
+                ", email='" + email + '\'' +
+                ", password='" + password + '\'' +
+                ", salary=" + salary +
+                ", startWork=" + startWork +
+                '}';
+    }
 }

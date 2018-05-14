@@ -40,6 +40,11 @@ public class DeveloperController {
         return conversionService.convert(createdDev, DeveloperDto.class);
     }
 
+    @GetMapping("/read/{dev}")
+    public void readDeveloper(@ModelAttribute("dev") Developer developer) {
+        System.out.println(developer);
+    }
+
     @DeleteMapping("/{id}")
     public void deleteDeveloper(@PathVariable("id") Long id) {
         developerService.deleteById(id);
