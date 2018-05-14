@@ -39,10 +39,10 @@ public class DeveloperController {
         Developer createdDev = developerService.create(developer);
         return conversionService.convert(createdDev, DeveloperDto.class);
     }
-
     @GetMapping("/read/{dev}")
-    public void readDeveloper(@ModelAttribute("dev") Developer developer) {
+    public Developer readDeveloper(@ModelAttribute("dev") Developer developer) {
         System.out.println(developer);
+        return developer;
     }
 
     @DeleteMapping("/{id}")
