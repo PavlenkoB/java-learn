@@ -1,5 +1,4 @@
 spring:
-  data:
   profiles:
     active: dev
   datasource:
