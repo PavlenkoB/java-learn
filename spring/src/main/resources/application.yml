@@ -1,8 +1,12 @@
 spring:
   data:
   profiles:
-    active: dev,t2
+    active: dev
   datasource:
     password: root
     username: root
     url: jdbc:mysql://localhost:3306/test_db?autoReconnect=true&useSSL=false
+    initialization-mode: always
+  jpa:
+    hibernate:
+      ddl-auto: create
