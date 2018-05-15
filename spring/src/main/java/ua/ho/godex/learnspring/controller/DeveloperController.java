@@ -2,12 +2,17 @@ package ua.ho.godex.learnspring.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.convert.ConversionService;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.servlet.mvc.method.annotation.ResponseBodyEmitter;
 import ua.ho.godex.learnspring.doamain.Developer;
 import ua.ho.godex.learnspring.dto.DeveloperDto;
 import ua.ho.godex.learnspring.service.DeveloperService;
 
+import java.io.IOException;
 import java.util.List;
+import java.util.Optional;
 import java.util.stream.Collectors;
 
 @RestController
@@ -32,6 +37,22 @@ public class DeveloperController {
         return developerDtos;
     }
 
+    @GetMapping("/all")
+    public ResponseBodyEmitter getAllEmitter() throws IOException {
+        ResponseBodyEmitter responseBodyEmitter = new ResponseBodyEmitter();
+        List<Developer> developers = developerService.getAll();
+        List<DeveloperDto> developerDtos = developers
+                .stream()
+                .map(developer -> conversionService.convert(developer, DeveloperDto.class))
+                .collect(Collectors.toList());
+        for (DeveloperDto dto : developerDtos) {
+            responseBodyEmitter.send(dto);
+        }
+//        developerDtos.forEach(developerDto -> responseBodyEmitter.send(developerDto));
+        responseBodyEmitter.complete();
+        return responseBodyEmitter;
+    }
+
     @PostMapping
     public DeveloperDto createDeveloper(@RequestBody DeveloperDto developerDto) {
         Developer developer = conversionService.convert(developerDto, Developer.class);
@@ -39,10 +60,15 @@ public class DeveloperController {
         Developer createdDev = developerService.create(developer);
         return conversionService.convert(createdDev, DeveloperDto.class);
     }
+
     @GetMapping("/read/{dev}")
-    public Developer readDeveloper(@ModelAttribute("dev") Developer developer) {
-        System.out.println(developer);
-        return developer;
+    public Object readDeveloper(@ModelAttribute("dev") Long developerId) {
+        Optional<Developer> optionalDeveloper = developerService.findById(developerId);
+        if (optionalDeveloper.isPresent()) {
+            return conversionService.convert(optionalDeveloper.get(), DeveloperDto.class);
+        } else {
+            return new ResponseEntity(HttpStatus.BAD_REQUEST);
+        }
     }
 
     @DeleteMapping("/{id}")
