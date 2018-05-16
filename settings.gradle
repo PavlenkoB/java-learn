@@ -1,3 +1,4 @@
 include 'patterns'
 include 'other'
 include 'spring'
+include 'spring_mongodb'

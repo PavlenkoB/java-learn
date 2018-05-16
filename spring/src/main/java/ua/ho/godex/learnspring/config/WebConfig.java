@@ -10,6 +10,8 @@ import java.util.concurrent.TimeUnit;
 
 @Configuration
 @EnableWebMvc
+//@EnableJpaRepositories
+//@EnableTransactionManagement
 public class WebConfig implements WebMvcConfigurer {
     @Override
     public void addResourceHandlers(ResourceHandlerRegistry registry) {

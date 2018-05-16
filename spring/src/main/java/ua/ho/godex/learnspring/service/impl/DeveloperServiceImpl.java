@@ -7,7 +7,6 @@ import org.springframework.transaction.annotation.Transactional;
 import ua.ho.godex.learnspring.dao.DeveloperRepository;
 import ua.ho.godex.learnspring.doamain.Developer;
 import ua.ho.godex.learnspring.service.DeveloperService;
-import ua.ho.godex.learnspring.service.impl.MainServiceImpl;
 
 import javax.annotation.PostConstruct;
 
@@ -16,7 +15,7 @@ import javax.annotation.PostConstruct;
 @Transactional
 public class DeveloperServiceImpl extends MainServiceImpl<Developer> implements DeveloperService {
 
-    DeveloperRepository developerRepository;
+    private DeveloperRepository developerRepository;
 
     @Autowired
     public DeveloperServiceImpl(DeveloperRepository developerRepository) {
