@@ -20,5 +20,5 @@ logging:
   level:
     root: INFO
 another:
-  name: qweasdzxc
+#  name: qweasdzxc
 

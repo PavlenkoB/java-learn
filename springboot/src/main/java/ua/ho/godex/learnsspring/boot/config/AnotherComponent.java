@@ -1,6 +1,12 @@
 package ua.ho.godex.learnsspring.boot.config;
 
+import org.springframework.validation.annotation.Validated;
+
+import javax.validation.constraints.NotNull;
+
+@Validated
 public class AnotherComponent {
+    @NotNull
     public String name;
 
     public AnotherComponent() {
