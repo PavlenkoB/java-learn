@@ -9,6 +9,10 @@ spring:
   jpa:
     hibernate:
       ddl-auto: update
+  devtools:
+    restart:
+      log-condition-evaluation-delta: true
+      exclude: static/**
 logging:
   level:
     root: INFO

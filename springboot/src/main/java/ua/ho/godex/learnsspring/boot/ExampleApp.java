@@ -3,13 +3,13 @@ package ua.ho.godex.learnsspring.boot;
 import org.springframework.boot.ApplicationArguments;
 import org.springframework.boot.ApplicationRunner;
 import org.springframework.boot.SpringApplication;
-import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-//@SpringBootApplication
+@SpringBootApplication
 //@PropertySource("classpath:application.yml")
-@EnableAutoConfiguration
+//@EnableAutoConfiguration
 @RestController
 public class ExampleApp implements ApplicationRunner {
 
