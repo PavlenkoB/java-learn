@@ -8,17 +8,22 @@ spring:
     initialization-mode: always
   jpa:
     hibernate:
-      ddl-auto: update
+      ddl-auto: updater
   devtools:
     restart:
       log-condition-evaluation-delta: true
-      exclude: static/**
   application:
     admin:
       enabled: true
+  output:
+    ansi:
+      enabled: detect
+  mvc:
+    static-path-pattern: /**
 logging:
   level:
     root: INFO
 another:
+#trace: true
 #  name: qweasdzxc
 
