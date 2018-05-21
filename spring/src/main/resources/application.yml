@@ -11,4 +11,9 @@ spring:
       ddl-auto: update
 logging:
   level:
-    root: INFO
+    root: INFO=*=false
+management:
+  metrics:
+    export:
+      datadog:
+        enabled: true
